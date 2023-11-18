@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="customer-info-form-wrapper">
+            <div class="personal-info padding-20-40">
+                <h2 class="heading_2">Contact information</h2>
+                <form>
+                    <div class="row-section">
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Your first name">Your first name</label>
+                            <div class="error-target" data-name="customer.firstname"><p class="error">can't be blank.</p></div>
+                        </div>
+
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Your last name">Your last name</label>
+                            <div class="error-target" data-name="customer.lastname"><p class="error">can't be blank.</p></div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Your email address">Your email address</label>
+                            <div class="error-target" data-name="customer.email"><p class="error">can't be blank.</p></div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Phone no.">Phone no.</label>
+                            <div class="error-target" data-name="customer.contactno"><p class="error">can't be blank.</p></div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Password">Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="order-details padding-20-40">
+                <div class="order-content">
+                    <div class="col__60">
+                        <h2 class="heading_2 order-balance-subheading">Today's payment</h2>
+                        <ul>
+                            <li class="order-balance-ammout">
+                                <p>MembersDirect Gold Membership</p>
+                                <span>$29.90</span>
+                            </li>
+                            <li class="order-balance-subheading">
+                                <p><b>Future payments</b></p>
+                            </li>
+                            <li class="order-balance-ammout">
+                                <p>Monthly payments</p>
+                                <span>$29.90</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col___40">
+                        <div class="order-btn-wrapper">
+                            <button class="btn continue-btn">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
