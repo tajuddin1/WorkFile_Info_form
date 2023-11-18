@@ -6,9 +6,39 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+
 .container{
     max-width: 1020px;
     margin: auto;
+}
+
+.webpage_content{
+    padding: 40px 40px 0px;
+}
+
+h2.webpage_title_m {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2.webpage_title_s {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+}
+
+h1.webpage_title_xl {
+    font-size: 37px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2.webpage_title_l {
+    font-size: 34px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 36px;
 }
 
 .padding-20-40 {
@@ -20,18 +50,137 @@ h2.heading_2 {
     margin: 20px 0;
 }
 
-.customer-info-form-wrapper{
+.webpage_content .row_2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 20px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-half ul {
+    padding-left: 18px;
+}
+.col-half img {
+    max-width: 377px;
+}
+
+.col-half ul li{
+    margin-top: 20px;
+}
+
+.col-half ul li p{
+    font-size: 18px;
+}
+
+.row_4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.testmonial-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    padding: 0 8px;
+}
+
+.card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.client_img {
+    width: 120px;
+}
+
+.client_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.client_info {
+    width: calc(100% - 120px);
+    padding-left: 5px;
+}
+
+.client_info p {
+    font-size: 14px;
+}
+
+.client_info span {
+    font-size: 13px;
+    color: #717171;
+}
+
+.card-head p {
+    font-size: 14px;
+}
+
+hr.hr-20 {
+    margin: 20px 0;
+}
+
+.main_box{
     font-family: 'DM Sans', sans-serif;
     -webkit-box-shadow: 0px 30px 100px rgba(38,26,25,.15);
             box-shadow: 0px 30px 100px rgba(38,26,25,.15);
     border-radius: 10px;
 }
 
+h3.heading_3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+p.sub_heading {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button.update_btn {
+    padding: 13px;
+    font-size: 18px;
+    background: #1CD3F5;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+center a {
+    font-size: 14px;
+    color: #5ca0e4;
+}
+
 .row-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
 }
 
 .material-textfield{
@@ -204,8 +353,66 @@ button.btn.continue-btn {
         width: 100%;
     }
 }
+@media screen and (max-width: 930px) {
+    .testmonial-card {
+        width: 50%;
+    }
+
+    .row_4 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .row-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .webpage_content .row_2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        row-gap: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width: 667px) {
+
+    .webpage_content {
+        padding: 30px;
+    }
+
+    .testmonial-card {
+        width: 100%;
+    }
+
+    .row_4 {
+        row-gap: 35px;
+    }
+}
 
 @media screen and (max-width: 590px) {
+    .webpage_content {
+        padding: 30px;
+    }
+
     .padding-20-40 {
         padding: 20px;
     }
