@@ -7,6 +7,10 @@
             box-sizing: border-box;
 }
 
+body{
+    background-color: #f5f6f8;
+}
+
 .container{
     max-width: 1020px;
     margin: auto;
@@ -330,6 +334,28 @@ button.btn.continue-btn {
     color: #fff;
     letter-spacing: 0.3px;
 }
+
+.footer {
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer span {
+    font-size: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: #959595;
+}
+
+.footer span a {
+    color: #959595;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1150px) {
     .container{
         width: 90%;
@@ -368,7 +394,7 @@ button.btn.continue-btn {
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
     .row-section {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -390,9 +416,58 @@ button.btn.continue-btn {
     .col-half {
         width: 100%;
     }
+    .webpage_title_l br{
+        display: none;
+    }
 
     
 }
+@media screen and (max-width: 768px) {
+    
+    h2.webpage_title_m {
+        font-size: 22px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    h2.webpage_title_s {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+
+    h1.webpage_title_xl {
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2.webpage_title_l {
+        font-size: 26px;
+        text-align: center;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+
+    .padding-20-40 {
+        padding: 20px 40px;
+    }
+
+    .col-half ul li {
+        margin-top: 10px;
+    }
+    h3.heading_3 {
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0 5px;
+    }
+
+    .col-half ul li p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 667px) {
 
     .webpage_content {
@@ -416,8 +491,45 @@ button.btn.continue-btn {
     .padding-20-40 {
         padding: 20px;
     }
-    h2.heading_2 {
+    h2.webpage_title_m {
+        font-size: 22px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    h2.webpage_title_s {
         font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+
+    h1.webpage_title_xl {
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2.webpage_title_l {
+        font-size: 26px;
+        text-align: center;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+
+    .padding-20-40 {
+        padding: 20px 40px;
+    }
+
+    h2.heading_2 {
+        font-size: 17px;
         margin: 0px 0px 20px;
+    }
+
+    .col-half ul li p {
+        font-size: 14px;
+    }
+    .footer {
+        display: block;
     }
 }
