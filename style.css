@@ -3,7 +3,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .container{
     max-width: 1020px;
@@ -21,11 +22,14 @@ h2.heading_2 {
 
 .customer-info-form-wrapper{
     font-family: 'DM Sans', sans-serif;
-    box-shadow: 0px 30px 100px rgba(38,26,25,.15);
+    -webkit-box-shadow: 0px 30px 100px rgba(38,26,25,.15);
+            box-shadow: 0px 30px 100px rgba(38,26,25,.15);
     border-radius: 10px;
 }
 
 .row-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -47,7 +51,8 @@ h2.heading_2 {
 .material-textfield input {
     background: none;
     border: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     font-size: 16px;
     padding: 22px 15px 7px;
@@ -58,13 +63,15 @@ h2.heading_2 {
 }
 
 .material-textfield input:invalid {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .material-textfield  input:focus{
     outline: none;
     border-color: #dee5ed;
-    box-shadow: 0 0 0 1px #dee5ed;
+    -webkit-box-shadow: 0 0 0 1px #dee5ed;
+            box-shadow: 0 0 0 1px #dee5ed;
 }
 
 .material-textfield label{
@@ -80,6 +87,8 @@ h2.heading_2 {
 .material-textfield label::before{
     content: attr(data-content);
     position: relative;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     will-change: font-size, top;
 }
@@ -90,6 +99,8 @@ h2.heading_2 {
     height: 0.3px;
     left: 50%;
     position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     width: 0;
     will-change: width, left;
@@ -120,8 +131,12 @@ h2.heading_2 {
 }
 
 .order-details ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 14px;
     font-size: 14px;
     color: #6A707D;
@@ -139,9 +154,15 @@ h2.heading_2 {
 }
 
 .order-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    column-gap: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
     row-gap: 20px
 }
 
@@ -169,7 +190,10 @@ button.btn.continue-btn {
 }
 @media screen and (max-width: 1024px) {
     .order-content {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .col__60 {
