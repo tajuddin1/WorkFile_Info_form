@@ -21,6 +21,11 @@ body{
     background-color: #fff;
 }
 
+.video-container {
+    max-width: 700px;
+    margin: auto;
+}
+
 h2.webpage_title_m {
     font-size: 30px;
     text-align: center;
